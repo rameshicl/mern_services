@@ -1,0 +1,15 @@
+{
+    "users": [
+      { "id": 1, "name": "Ramesh" },
+      { "id": 2, "name": "Suresh" }
+    ],
+    "products": [
+      { "id": 101, "name": "Laptop" },
+      { "id": 102, "name": "Phone" }
+    ],
+    "orders": [
+      { "id": 201, "userId": 1, "productId": 101 },
+      { "id": 202, "userId": 2, "productId": 102 }
+    ]
+  }
+  
