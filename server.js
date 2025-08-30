@@ -22,8 +22,8 @@ app.use("/uploads", express.static("uploads")); // serve images directly
 // mongoose.connect('mongodb://localhost:27017/mydb')
 //   .then(() => console.log('MongoDB connected'))
 //   .catch(err => console.error(err));
-app.use("/users", authenticateToken, userRoutes);
-app.use("/images", imageRoutes);
+app.use("/users", userRoutes);
+app.use("/images",authenticateToken, imageRoutes);
 app.use("/auth",authRoutes);
 app.get("/dashboard", authenticateToken, (req, res) => {
     res.json({ message: "Welcome to Dashboard!", user: req.user });
